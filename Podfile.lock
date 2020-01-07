@@ -1,0 +1,24 @@
+PODS:
+  - ArcGIS-Runtime-SDK-iOS (100.6)
+  - RadioGroup (1.4.0):
+    - SweeterSwift
+  - SweeterSwift (1.0.5)
+
+DEPENDENCIES:
+  - ArcGIS-Runtime-SDK-iOS (= 100.6)
+  - RadioGroup
+
+SPEC REPOS:
+  trunk:
+    - ArcGIS-Runtime-SDK-iOS
+    - RadioGroup
+    - SweeterSwift
+
+SPEC CHECKSUMS:
+  ArcGIS-Runtime-SDK-iOS: eaf6376bda9504f6bbf1952744c286f576da69d8
+  RadioGroup: 27ceb18c20f995ed588f9ec0375099a8dd550f3e
+  SweeterSwift: 2708d1eea926546f8f6e8fea38ac8f5598ff00c7
+
+PODFILE CHECKSUM: 6bc18d61acb0d54db6fb32bbaaf5a6243aed81c9
+
+COCOAPODS: 1.8.4

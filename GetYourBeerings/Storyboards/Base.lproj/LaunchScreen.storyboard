@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nL1-jF-mFU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="uR7-Mf-enJ">
+            <objects>
+                <viewController id="nL1-jF-mFU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4eQ-V6-v9p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3W-YE-0YR">
+                                <rect key="frame" x="72" y="251" width="270" height="394"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Your Beerings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8k8-mw-rUk">
+                                        <rect key="frame" x="-11" y="269" width="292" height="117"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PintGlass" translatesAutoresizingMaskIntoConstraints="NO" id="xyr-p9-5fN">
+                                        <rect key="frame" x="17.5" y="8" width="235" height="235"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="235" id="QhI-L7-TjZ"/>
+                                            <constraint firstAttribute="width" constant="235" id="d7T-bU-bTs"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="7PV-3i-V3l"/>
+                                    <constraint firstItem="8k8-mw-rUk" firstAttribute="bottom" secondItem="h3W-YE-0YR" secondAttribute="bottomMargin" id="8jV-jT-HNg"/>
+                                    <constraint firstItem="8k8-mw-rUk" firstAttribute="leading" secondItem="h3W-YE-0YR" secondAttribute="leading" constant="-11" id="Bgy-gm-WZx"/>
+                                    <constraint firstItem="xyr-p9-5fN" firstAttribute="centerX" secondItem="h3W-YE-0YR" secondAttribute="centerX" id="UeW-gk-hFd"/>
+                                    <constraint firstItem="8k8-mw-rUk" firstAttribute="centerX" secondItem="xyr-p9-5fN" secondAttribute="centerX" id="baP-5u-5hR"/>
+                                    <constraint firstItem="8k8-mw-rUk" firstAttribute="top" secondItem="xyr-p9-5fN" secondAttribute="bottom" constant="26" id="mV8-JH-uwX"/>
+                                    <constraint firstAttribute="height" constant="394" id="plR-Sb-eGK"/>
+                                    <constraint firstItem="xyr-p9-5fN" firstAttribute="centerY" secondItem="h3W-YE-0YR" secondAttribute="centerY" constant="-71.5" id="stf-ON-bg7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86841863389999996" green="0.76942270989999995" blue="0.35675975679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="h3W-YE-0YR" firstAttribute="centerY" secondItem="4eQ-V6-v9p" secondAttribute="centerY" id="DZW-3l-elH"/>
+                            <constraint firstItem="h3W-YE-0YR" firstAttribute="centerX" secondItem="4eQ-V6-v9p" secondAttribute="centerX" id="GyM-QY-UZV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1x8-Zr-65W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nq-g7-0if" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="59.598214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PintGlass" width="512" height="512"/>
+    </resources>
+</document>

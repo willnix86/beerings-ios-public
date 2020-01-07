@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bPK-hB-h8f">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Results-->
+        <scene sceneID="7Hb-q9-NYi">
+            <objects>
+                <viewController storyboardIdentifier="ResultsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZXY-3z-8ww" customClass="ResultsView" customModule="GetYourBeerings" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Results" id="m9V-0f-smg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="B0Z-jG-dBr" kind="presentation" modalPresentationStyle="pageSheet" id="jcJ-ep-CR4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSF-AK-Vfu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="885"/>
+        </scene>
+        <!--Details View-->
+        <scene sceneID="cKd-ce-2ta">
+            <objects>
+                <viewController storyboardIdentifier="VenueDetails" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B0Z-jG-dBr" customClass="DetailsView" customModule="GetYourBeerings" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIb-x0-vuO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201" y="1711"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Hn8-g8-LAh">
+            <objects>
+                <viewController storyboardIdentifier="MapView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WbI-Y3-dE5" customClass="MapView" customModule="GetYourBeerings" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" id="7PL-0u-BRg"/>
+                    <connections>
+                        <segue destination="B0Z-jG-dBr" kind="presentation" modalPresentationStyle="pageSheet" id="Xs1-1U-ahd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNi-4B-ZBy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="885"/>
+        </scene>
+        <!--Beerings Tab Bar-->
+        <scene sceneID="sJE-Pm-XQa">
+            <objects>
+                <tabBarController storyboardIdentifier="BeeringsTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bPK-hB-h8f" customClass="BeeringsTabBar" customModule="GetYourBeerings" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8pn-He-f1h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WbI-Y3-dE5" kind="relationship" relationship="viewControllers" id="EEA-Aq-dgE"/>
+                        <segue destination="ZXY-3z-8ww" kind="relationship" relationship="viewControllers" id="CDk-6C-sG0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zm4-4P-fSv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201" y="147"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jcJ-ep-CR4"/>
+    </inferredMetricsTieBreakers>
+</document>
